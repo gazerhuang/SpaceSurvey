@@ -43,13 +43,30 @@
 		"game": {
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/finish/finish",
+					"pathName": "pages/finish/finish",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/content/content",
+					"pathName": "pages/content/content",
+					"scene": null
 				}
 			]
 		}

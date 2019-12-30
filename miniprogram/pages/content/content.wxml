@@ -1,0 +1,24 @@
+<view>
+  <view class="block">
+    <view class="block-title">现有工作文件</view>
+    <view>包括不限于模型、视频、文档、安装包等</view>
+  </view>
+  <van-cell-group>
+
+    <van-field value="{{ password }}" type="number" label="容量" placeholder="容量大小（单位G）" required border="{{ false }}" />
+  </van-cell-group>
+
+  <view class="block">
+    <view class="block-title">个人文件</view>
+    <view>默认5G，需提升容量的请留言</view>
+  </view>
+  <van-cell-group>
+
+    <van-field value="{{ r2 }}" type="number" label="容量" placeholder="5G" />
+
+    <van-field value="{{ message }}" label="用途" type="textarea" placeholder="请输入用途" autosize fixed="true" border="{{ false }}" />
+  </van-cell-group>
+
+  <van-button class="btn" plain color="#036eb7" block bindtap="onCommitClick">提交</van-button>
+
+</view>
