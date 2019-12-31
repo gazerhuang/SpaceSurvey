@@ -1,4 +1,4 @@
-// pages/content/content.js
+// pages/login/login.js
 Page({
 
   /**
@@ -6,6 +6,20 @@ Page({
    */
   data: {
 
+  },
+
+  onClickIcon: function () {
+    wx.showToast({
+      title: '输入公司员工编号，与OA系统相同',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+
+  onLoginClick: function () {
+    wx.redirectTo({
+      url: '../index/index',
+    })
   },
 
   /**

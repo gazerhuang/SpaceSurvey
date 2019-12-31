@@ -1,10 +1,24 @@
-<view class="index">
-  <image class="img" src="../../images/BoKun_Logo2.png"></image>
+<view>
+  <view class="block">
+    <view class="block-title">现有工作文件（必填）</view>
+    <view>包括不限于模型、视频、文档、安装包等</view>
+    <view>请大致统计当前使用量</view>
+  </view>
   <van-cell-group>
-    <van-field value="{{ username }}" required clearable label="员工编号" icon="question-o" placeholder="请输入员工编号" bind:click-icon="onClickIcon" />
 
-    <van-field value="{{ password }}" type="password" label="密码" placeholder="请输入密码" required border="{{ false }}" />
+    <van-field value="{{ rom }}" type="number" label="容量(G)" placeholder="容量大小（单位GB）" required border="{{ false }}" />
   </van-cell-group>
-  <van-button class="btn" plain color="#036eb7" block bindtap="onLoginClick">登录</van-button>
 
+  <view class="block">
+    <view class="block-title">个人文件（可选）</view>
+    <view>个人需在公司存储的文件</view>
+    <view>每人默认5G，需提升容量的请留言写明用途</view>
+  </view>
+  <van-cell-group>
+
+    <van-field value="{{ rom2 }}" type="number" label="容量(G)" placeholder="默认5GB" />
+
+    <van-field value="{{ message }}" label="用途" type="textarea" placeholder="请输入用途" autosize fixed="true" border="{{ false }}" />
+  </van-cell-group>
+<van-button class="btn" plain color="#036eb7" block bindtap="onCommitClick">提交</van-button>
 </view>

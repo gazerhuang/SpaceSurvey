@@ -1,0 +1,15 @@
+.btn{
+  margin: 12rpx;
+}
+
+.img{
+  width: 240rpx;
+  height: 138rpx;
+  margin-bottom: 32rpx;
+  text-align: center;
+}
+
+.index{
+  text-align:center;
+  margin-top: 200rpx;
+}

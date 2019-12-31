@@ -8,19 +8,7 @@ Page({
 
   },
 
-  onClickIcon:function(){
-    wx.showToast({
-      title: '输入公司员工编号，与OA系统相同',
-      icon: 'none',
-      duration: 2000
-    })
-  },
-
-  onLoginClick:function(){
-    wx.redirectTo({
-      url: '../finish/finish',
-    })
-  },
+  
 
   /**
    * 生命周期函数--监听页面加载

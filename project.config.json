@@ -60,12 +60,20 @@
 					"id": -1,
 					"name": "pages/finish/finish",
 					"pathName": "pages/finish/finish",
+					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
 					"name": "pages/content/content",
 					"pathName": "pages/content/content",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
 					"scene": null
 				}
 			]
