@@ -1,2 +1,3 @@
-<image src="../../images/thanku.jpg" class="img"></image>
+<view class="texta"><image src="../../images/fin.png" class="img"></image></view>
 <text class="texta">信息已记录，谢谢配合。</text>
+<text class="textb">部门会尽量满足各位需求，但也不要浪费公共空间，如有疑问，请联系相关人员。</text>

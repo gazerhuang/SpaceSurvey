@@ -13,5 +13,9 @@
 }
 
 .btn{
-  margin: 12rpx;
+  margin: 2rpx;
+}
+
+.user{
+  padding: 32px 16px 0px;
 }

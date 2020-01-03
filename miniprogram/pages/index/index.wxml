@@ -1,4 +1,16 @@
+<!-- <view class="user">你好，{{user_name}}</view> -->
+
 <view>
+  <view class="block">
+    <view class="block-title">姓名</view>
+    <view>请确认账号绑定正确</view>
+  </view>
+  <van-cell-group>
+    <van-field value="{{user_name}}" label="用户名" disabled border="{{ false }}" use-button-slot>
+      <van-button slot="button" size="mini" plain color="#036eb7" bindtap="onLogout">退出登录</van-button>
+    </van-field>
+  </van-cell-group>
+
   <view class="block">
     <view class="block-title">现有工作文件（必填）</view>
     <view>包括不限于模型、视频、文档、安装包等</view>
@@ -6,7 +18,7 @@
   </view>
   <van-cell-group>
 
-    <van-field value="{{ rom }}" type="number" label="容量(G)" placeholder="容量大小（单位GB）" required border="{{ false }}" />
+    <van-field value="{{ rom }}" type="number" label="容量(G)" placeholder="容量大小（单位GB）" required border="{{ false }}"  bindinput="romInput" />
   </van-cell-group>
 
   <view class="block">
@@ -16,9 +28,13 @@
   </view>
   <van-cell-group>
 
-    <van-field value="{{ rom2 }}" type="number" label="容量(G)" placeholder="默认5GB" />
+    <van-field value="{{ rom2 }}" type="number" label="容量(G)" placeholder="默认5GB" bindinput="rom2Input" />
 
-    <van-field value="{{ message }}" label="用途" type="textarea" placeholder="请输入用途" autosize fixed="true" border="{{ false }}" />
+    <van-field value="{{ message }}" label="用途" type="textarea" placeholder="请输入用途" autosize fixed="true" border="{{ false }}" bindinput="msgInput" />
   </van-cell-group>
-<van-button class="btn" plain color="#036eb7" block bindtap="onCommitClick">提交</van-button>
+  <view style="padding:20rpx">
+    <van-button class="btn" plain color="#036eb7" block bindtap="onCommit">提交</van-button>
+  </view>
 </view>
+
+<van-toast id="van-toast" />

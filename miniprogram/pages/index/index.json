@@ -3,6 +3,7 @@
     "van-button": "@vant/weapp/button",
     "van-field": "@vant/weapp/field",
     "van-row": "@vant/weapp/row",
-    "van-col": "@vant/weapp/col"
+    "van-col": "@vant/weapp/col",
+    "van-toast": "@vant/weapp/toast"
   }
 }

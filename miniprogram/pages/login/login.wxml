@@ -1,10 +1,12 @@
 <view class="index">
   <image class="img" src="../../images/BoKun_Logo2.png"></image>
   <van-cell-group>
-    <van-field value="{{ username }}" required clearable label="员工编号" icon="question-o" placeholder="请输入员工编号" bind:click-icon="onClickIcon" />
+    <van-field value="{{ username }}" required clearable label="员工编号" icon="question-o" placeholder="请输入员工编号" bind:click-icon="onClickIcon" bindinput="usernameInput" />
 
-    <van-field value="{{ password }}" type="password" label="密码" placeholder="请输入密码" required border="{{ false }}" />
+    <van-field value="{{ password }}" type="password" label="密码" placeholder="请输入密码" required border="{{ false }}" bindinput="pwdInput" />
   </van-cell-group>
-  <van-button class="btn" plain color="#036eb7" block bindtap="onLoginClick">登录</van-button>
-
+  <view style="padding:20rpx">
+    <van-button class="btn" plain color="#036eb7" block bindtap="onLoginClick">登录</van-button>
+  </view>
 </view>
+<van-toast id="van-toast" />

@@ -1,8 +1,18 @@
-.texta{
+.texta {
   text-align: center;
   margin-top: 20rpx;
 }
 
-.img{
-  width: 100%;
+.img {
+  text-align: center;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.textb {
+  margin: 36rpx 60rpx 36rpx 60rpx;
+  color: rgba(69, 90, 100, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }

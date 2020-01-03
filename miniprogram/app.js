@@ -15,6 +15,21 @@ App({
       })
     }
 
-    this.globalData = {}
+    try {
+      var value = wx.getStorageSync('s_userinfo')
+      if (value) {
+        this.globalData = {
+          userInfo: value
+        }
+      }else{
+        this.globalData = {
+          userInfo: null
+        }
+      }
+    } catch (e) {
+      console.log("getStorageSync Wrong")
+    }
+
+    
   }
 })

@@ -8,9 +8,8 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#036eb7",
-    "navigationBarTitleText": "小程序",
+    "navigationBarTitleText": "研发部空间需求调研",
     "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }
